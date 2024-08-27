@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>KAARAM & COFFEE</title>
+    <link
+      rel="shortcut icon"
+      href="images/logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- META -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+        
+    <meta name="googlebot" content="all" />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.google.com/specimen/Great+Vibes"
+      rel="stylesheet"
+    />
+
+    <!-- CDN FONTS  -->
+    <link href="https://fonts.cdnfonts.com/css/elinga" rel="stylesheet" />
+
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link href="https://copyfonts.com/fonts/attari-salees.html" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+ 
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <!-- CODE FOR NAVIGATION BAR -->
+        <ul class="px-0 mx-0">
+          <img
+            src="./images/snr.png"
+            height="50px"
+            width="100px"
+            alt="navbar-logo"
+          />
+        </ul>
+        <a class="navbar-brand" href="index.html">Kaaram & Coffee</a>
+        <!--         <a style ="font-size :class="navbar-brand" href="#">Kaaram & Coffee</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link px-3" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#categorySection">Canteen Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#healthySection">Terms & Conditions</a>
+            </li>
+            
+          </ul>
+        </div>
+        <span
+          class="shoppingCart"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
+          <i class="fas fa-shopping-cart"></i>
+          <span class="shoppingCartAfter">0</span>
+        </span>
+      </div>
+    </nav>
+
+    <a id="scrollToTop" class="btn"><i class="fas fa-caret-up"></i></a>
+
+    <div class="container home-container">
+      <section id="homeSection" class="d-flex justify-content-center">
+        <div class="row homeRow">
+          <div class="col-lg-6 homeTxtCol">
+            <h1 class="homeHeading">
+              Canteen Food Order Online <br />
+              <span data-text="SRCASCanteenApp">SRCASCanteenApp</span>
+              <br />
+              for our Student & Staff
+            </h1>
+            <br />
+            <div class="homeBtnDiv">
+              <a href="#categorySection" class="btn homeBtn">Order Now</a>
+            </div>
+          </div>
+          <div class="col-lg-6 homeImgCol">
+            <img class="homeImg" src="./images/momoss.png" alt="momos" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <br />
+
+    <section id="categorySection">
+      <div class="container">
+        <h1>
+          <span><b>Canteen Menu</b></span>
+        </h1>
+        <div class="row gutters-40">
+          <div class="col-lg-4 col-sm-4 col-4">
+            <div class="product-box-layout4 momos">
+              <div class="item-figure">
+                <img
+                  src="./images/featured-4jpg.jpg"
+                  alt="Category"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div class="item-content">
+                <h2 class="card-title">Chat & Drinks</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-4 col-4">
+            <div class="product-box-layout4 chinese">
+              <div class="item-figure">
+                <img
+                  src="./images/puffs.jpg"
+                  alt="Category"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div class="item-content">
+                <h2 class="card-title">Puffs</h2>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <!-- MENU STARTS HERE -->
+        <div class="menuDiv">
+          <!-- MODAL -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row paymentInfoRow">
+                      <div class="col paymentInfo">
+                        <span class="checkIcon"
+                          ><i class="fas fa-check-circle"></i
+                        ></span>
+                        Select Menu
+                      </div>
+                      <div class="col paymentInfo">
+                        <span class="checkIcon"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></span>
+                        Place order via Whatsapp
+                      </div>
+                      <div class="col paymentInfo">
+                        <span class="checkIcon"
+                          ><i class="fa-brands fa-google-pay"></i>
+                        </span>
+                        Pay using Google Pay.
+                      </div>
+                    </div>
+
+                    <hr class="cartHr" />
+
+                    <div class="cartContentDiv">
+                      <h1>Your Cart is Empty</h1>
+                    </div>
+
+                    <div class="userInfoDiv">
+                      <div class="mb-3 px-2">
+                        <label for="address">Confrim Order  *</label> <br />
+                        <textarea
+                          type="text"
+                          class="form-control"
+                          id="address"
+                        ></textarea>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="totalAmountDiv"></div>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    onclick="location.reload()"
+                  >
+                    Clear Cart
+                  </button>
+                  <a class="btn btn-primary" onclick="openWhatsapp()">
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="momos">
+            <div class="row menuHeading">
+              <div class="col-12">
+                <h1>Chat Items</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-12">
+                <div class="card">
+                  <h2 class="card-title">Chat & Drinks</h2>
+                  <div class="card-body">
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          kalan
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>40
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+                    
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Bhel Poori
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>35
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Foorti
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>10
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Masala Puri
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>35
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+                   
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          jar cake
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>40
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Smoothe
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>15
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row checkOutRow">
+              <button
+                type="button"
+                class="btn knowMoreBtn"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                <i class="fas fa-shopping-cart"></i> Go to Cart
+              </button>
+            </div>
+          </div>
+
+          <div id="chinese">
+            <div class="row menuHeading">
+              <div class="col-12">
+                <h1>Puffs</h1>
+              </div>
+              <!-- Button trigger modal -->
+              <span
+                class="shoppingCart"
+                data-toggle="modal"
+                data-target="#exampleModal">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="shoppingCartAfter">0</span>
+              </span>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card">
+                  <h2 class="card-title">Puff,Sandwich & Rolls</h2>
+                  <div class="card-body">
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Veg Puffs
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>15
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          egg puffs
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>20
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Mushroom puffs<span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>25
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Chicken Puffs
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>30
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Veg Spring Roll 
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>20
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                      <hr class="foodItemHr" />
+
+
+                      <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Non Veg Spring Roll
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/non-veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>30
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                      <hr class="foodItemHr" />
+
+
+
+                      <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Veg Sandwich
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>30
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                      <hr class="foodItemHr" />
+
+
+                      <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                           Non Veg Sandwich
+                          <span>
+                            <img
+                              class="vegIcon"
+                              src="./images/non-veg.webp"
+                              alt="veg-icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>40
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                      <hr class="foodItemHr" />
+
+
+                    </div>
+                  
+
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Veg Cutlet
+                          <span>
+                            <img
+                              class="nonVegIcon"
+                              src="./images/veg.webp"
+                              alt="non-veg icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>15
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Veg Roll
+                          <span>
+                            <img
+                              class="nonVegIcon"
+                              src="./images/veg.webp"
+                              alt="non-veg icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>25
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Egg Roll
+                          <span>
+                            <img
+                              class="nonVegIcon"
+                              src="./images/veg.webp"
+                              alt="non-veg icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>30
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <hr class="foodItemHr" />
+
+                    <div class="row foodItem">
+                      <div class="col-9 foodItemName">
+                        <p>
+                          Samosa
+                          <span>
+                            <img
+                              class="nonVegIcon"
+                              src="./images/veg.webp"
+                              alt="non-veg icon"
+                            />
+                          </span>
+                        </p>
+                        <p class="text-muted-small">
+                          <i class="fas fa-rupee-sign"></i>15
+                        </p>
+                      </div>
+                      <div class="col-3 addCol">
+                        <span class="menuBtn minus"
+                          ><i class="fas fa-minus"></i
+                        ></span>
+                        <span class="quantity">0</span>
+                        <span class="menuBtn plus"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+                    
+              
+            <div class="row checkOutRow">
+              
+            </div>
+          </div>
+
+                    
+
+            <div class="row checkOutRow">
+              <button
+                type="button"
+                class="btn knowMoreBtn"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                <i class="fas fa-shopping-cart"></i> Go to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="healthySection">
+      <h1 class="hygiene-title">
+        <span><b>Terms & Conditions</b></span>
+      </h1>
+      <div class="eatSure container">
+        <div class="row">
+          <div class="col-sm-2 col-12">
+            <img
+              src="./images/Kaaram.png"
+              width="15
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              0"
+              alt="kaaram & Coffee logo"
+            />
+          </div>
+
+          <div class="col-sm-2 col-6 borderLeft">
+            <div class="icon-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Capa_1"
+                enable-background="new 0 0 515.556 515.556"
+                height="512px"
+                viewBox="0 0 515.556 515.556"
+                width="512px"
+              >
+                <g>
+                  <path
+                    d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z"
+                    data-original="#000000"
+                    class="active-path"
+                    data-old_color="#000000"
+                    fill="#FFFFFF"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="text">Ordering Time 10:10 to 11:30
+              2:50 to 3:00 Pm</div>
+          </div>
+
+          <div class="col-sm-2 col-6 borderLeft">
+            <div class="icon-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Capa_1"
+                enable-background="new 0 0 515.556 515.556"
+                height="512px"
+                viewBox="0 0 515.556 515.556"
+                width="512px"
+              >
+                <g>
+                  <path
+                    d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z"
+                    data-original="#000000"
+                    class="active-path"
+                    data-old_color="#000000"
+                    fill="#FFFFFF"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="text">Order snackonly</div>
+          </div>
+
+          <div class="col-sm-2 col-6 borderLeft">
+            <div class="icon-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Capa_1"
+                enable-background="new 0 0 515.556 515.556"
+                height="512px"
+                viewBox="0 0 515.556 515.556"
+                width="512px"
+              >
+                <g>
+                  <path
+                    d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z"
+                    data-original="#000000"
+                    class="active-path"
+                    data-old_color="#000000"
+                    fill="#FFFFFF"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="text">No refund in cash but you can exchange in price value item
+             </div>
+          </div>
+
+          <div class="col-sm-2 col-6 borderLeft">
+            <div class="icon-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Capa_1"
+                enable-background="new 0 0 515.556 515.556"
+                height="512px"
+                viewBox="0 0 515.556 515.556"
+                width="512px"
+              >
+                <g>
+                  <path
+                    d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z"
+                    data-original="#000000"
+                    class="active-path"
+                    data-old_color="#000000"
+                    fill="#FFFFFF"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="text">If you order any food that cannot to be replaced<br /><br /></div>
+          </div>
+
+          <div class="col-sm-2 col-12 borderLeft">
+            <a
+              target="_blank"
+              class="btn knowMoreBtn"
+              >Thank You</a
+            >
+          </div>
+        </div>
+      </div>
+
+
+          
+    <!-- TESTIMONIALS SECTION -->
+    <section id="healthySection" class="testimonials">
+      <h1 class="hygiene-title">
+        <span><b>Credits</b></span>
+      </h1>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-xl-8 text-center">
+          <p class="mb-4 pb-2 mb-md-5 pb-md-0"></p>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-4 mb-5 mb-md-0">
+          <div class="d-flex justify-content-center mb-4">
+            
+          </div>
+          <h5 class="mb-3">Dr.D.Hari Prasad (BCA)</h5>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>
+            Head Of Department 
+          </p>
+          
+        </div>
+        <div class="col-md-4 mb-5 mb-md-0">
+          <div class="d-flex justify-content-center mb-4">
+            
+          </div>
+          <h5 class="mb-3">Rooban Jayakumar.S (BCA) </h5>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>App Design & Development.
+          </p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            
+          </ul>
+        </div>
+        <div class="col-md-4 mb-0">
+          <div class="d-flex justify-content-center mb-4">
+            
+          </div>
+          <h5 class="mb-3">Vishnu.S (BCA) </h5>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>App Design & Development.
+          </p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+
+            <div class="col-md-4 mb-5 mb-md-0">
+          <div class="d-flex justify-content-center mb-4">
+            
+          </div>
+          <h5 class="mb-3">Lakshmipathy.T (BCOM CA) </h5>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>Logo & Poster Design
+          </p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            
+          </ul>
+        </div>
+
+
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER STARTS HERE -->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-9 footerHeadingCol">
+            <h1></h1>
+          </div>
+
+          
+        
+        <div class="row copyrightRow">
+          <p class="copyright">&copy; Copyright SRCAS All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONT AWESOME JS -->
+    <script
+      src="https://kit.fontawesome.com/9f6e489cf7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="./index.js"></script>
+  </body>
+
+  <!-- BOOTSTRAP JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- JQUERY CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- CUSTOM JS -->
+  <script src="./index.js"></script>
+  <script>
+    $(window).on("load", function () {
+      $("#loading").hide();
+    });
+  </script>
+</html>
